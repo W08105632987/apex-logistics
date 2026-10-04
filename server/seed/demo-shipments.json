@@ -1,0 +1,641 @@
+[
+  {
+    "id": "shp_8492_us",
+    "trackingNumber": "APX-8492-US",
+    "referenceNumber": "REF-MED-2026-904",
+    "serviceType": "express_air",
+    "status": "out_for_delivery",
+    "statusMessage": "Consignment is with local courier for priority delivery window (10:00 AM - 1:30 PM)",
+    "createdAt": "2026-08-23T08:30:00Z",
+    "updatedAt": "2026-08-26T06:15:00Z",
+    "estimatedDelivery": "2026-08-26T13:30:00Z",
+    "originHub": {
+      "code": "FRA",
+      "name": "Frankfurt Global Freight Terminal",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "coordinates": [
+        50.0379,
+        8.5622
+      ]
+    },
+    "destinationHub": {
+      "code": "JFK",
+      "name": "John F. Kennedy International Cargo Port",
+      "city": "New York",
+      "country": "United States",
+      "coordinates": [
+        40.6413,
+        -73.7781
+      ]
+    },
+    "currentLocation": {
+      "city": "New York (Manhattan)",
+      "country": "United States",
+      "description": "Local Delivery Van #NYC-402 en route to 5th Ave",
+      "coordinates": [
+        40.7589,
+        -73.9851
+      ],
+      "updatedAt": "2026-08-26T06:15:00Z"
+    },
+    "sender": {
+      "name": "Bayerische BioMed Instruments AG",
+      "company": "BioMed European Export Division",
+      "address": "Industriepark Höchst, Geb. K801",
+      "city": "Frankfurt",
+      "postalCode": "65926",
+      "country": "Germany",
+      "phone": "+49 69 305 1200",
+      "email": "logistics@biomed-export.de"
+    },
+    "receiver": {
+      "name": "Dr. Sarah Jenkins",
+      "company": "Mount Sinai Healthcare Research Center",
+      "address": "1425 Madison Avenue, 7th Floor Lab",
+      "city": "New York",
+      "stateProvince": "NY",
+      "postalCode": "10029",
+      "country": "United States",
+      "phone": "+1 (212) 555-0198",
+      "email": "s.jenkins@mountsinai-research.org"
+    },
+    "packageDetails": {
+      "weight": 14.5,
+      "unit": "kg",
+      "dimensions": "55 x 40 x 30 cm",
+      "pieces": 2,
+      "cargoType": "Temperature Controlled Medical Diagnostics",
+      "declaredValue": "$28,500.00",
+      "currency": "USD",
+      "isInsured": true,
+      "insurancePolicyNumber": "POL-GLO-882194-A",
+      "specialHandling": "Keep refrigerated between 2°C - 8°C. Do not stack.",
+      "barcodeNumber": "8901239849201"
+    },
+    "transportVessel": {
+      "type": "flight",
+      "identifier": "Apex Air Cargo AF-310 (Boeing 777F)",
+      "carrier": "Apex Global Express Logistics"
+    },
+    "customsDetails": {
+      "declarationNumber": "US-CBP-2026-991204",
+      "status": "cleared",
+      "dutyAmount": "$0.00 (Medical Research Exempt)",
+      "clearedDate": "2026-08-25T19:40:00Z"
+    },
+    "assignedCourier": {
+      "name": "David Alvarez",
+      "id": "NYC-DRV-882",
+      "phone": "+1 (917) 555-8321",
+      "vehiclePlate": "NY-COM-4910",
+      "rating": 4.95
+    },
+    "notes": "Direct signature required upon arrival. Check tamper evident seal #TE-9921.",
+    "tags": [
+      "Cold Chain",
+      "Priority Express",
+      "High Value",
+      "Pharma"
+    ],
+    "subscribers": [
+      "s.jenkins@mountsinai-research.org",
+      "gideonprincewill5@gmail.com"
+    ],
+    "checkpoints": [
+      {
+        "id": "chk_1",
+        "timestamp": "2026-08-26T06:15:00Z",
+        "location": "New York Regional Distribution Hub",
+        "city": "New York",
+        "country": "United States",
+        "status": "out_for_delivery",
+        "title": "Loaded onto Delivery Vehicle",
+        "description": "Package scanned into courier van #NYC-402. Estimated delivery window: 10:00 AM - 1:30 PM.",
+        "facilityCode": "NY-HUB-01",
+        "coordinates": [
+          40.7589,
+          -73.9851
+        ],
+        "completed": true
+      },
+      {
+        "id": "chk_2",
+        "timestamp": "2026-08-25T23:30:00Z",
+        "location": "JFK Air Logistics Sorting Center",
+        "city": "New York",
+        "country": "United States",
+        "status": "received_at_facility",
+        "title": "Arrived at Destination Air Hub",
+        "description": "Unloaded from Flight AF-310. Sorted to Manhattan Express route.",
+        "facilityCode": "JFK-CARGO-T4",
+        "coordinates": [
+          40.6413,
+          -73.7781
+        ],
+        "completed": true
+      },
+      {
+        "id": "chk_3",
+        "timestamp": "2026-08-25T19:40:00Z",
+        "location": "US Customs & Border Protection Inspection",
+        "city": "New York",
+        "country": "United States",
+        "status": "customs_clearance",
+        "title": "Customs Clearance Completed",
+        "description": "Import regulatory approval granted under medical equipment priority tariff.",
+        "facilityCode": "US-CBP-JFK",
+        "coordinates": [
+          40.6413,
+          -73.7781
+        ],
+        "completed": true
+      },
+      {
+        "id": "chk_4",
+        "timestamp": "2026-08-24T14:10:00Z",
+        "location": "Frankfurt Airport Air Cargo Hub",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "status": "in_transit",
+        "title": "Departed Origin International Airport",
+        "description": "Consignment departed on scheduled flight Apex Air Cargo AF-310 direct to JFK.",
+        "facilityCode": "FRA-AIR-02",
+        "coordinates": [
+          50.0379,
+          8.5622
+        ],
+        "completed": true
+      },
+      {
+        "id": "chk_5",
+        "timestamp": "2026-08-23T16:00:00Z",
+        "location": "Frankfurt Processing & Cold Chain Facility",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "status": "picked_up",
+        "title": "Received at Apex Processing Center",
+        "description": "Shipment weighed, measured, temperature logged at 4.2°C, barcode applied.",
+        "facilityCode": "FRA-HUB-01",
+        "coordinates": [
+          50.0379,
+          8.5622
+        ],
+        "completed": true
+      },
+      {
+        "id": "chk_6",
+        "timestamp": "2026-08-23T08:30:00Z",
+        "location": "Apex Electronic Booking Portal",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "status": "manifest_created",
+        "title": "Electronic Shipping Manifest Created",
+        "description": "Consignment booked by shipper. Waybill #APX-8492-US registered in global tracking database.",
+        "facilityCode": "WEB-EDI",
+        "coordinates": [
+          50.0379,
+          8.5622
+        ],
+        "completed": true
+      }
+    ]
+  },
+  {
+    "id": "shp_9204_gb",
+    "trackingNumber": "APX-9204-GB",
+    "referenceNumber": "PO-TYO-99120",
+    "serviceType": "express_air",
+    "status": "in_transit",
+    "statusMessage": "Vessel in air transit. Trans-Eurasia flight Apex AF-902 cruising altitude 36,000ft.",
+    "createdAt": "2026-08-24T11:00:00Z",
+    "updatedAt": "2026-08-26T04:30:00Z",
+    "estimatedDelivery": "2026-08-27T17:00:00Z",
+    "originHub": {
+      "code": "NRT",
+      "name": "Tokyo Narita International Freight Facility",
+      "city": "Tokyo",
+      "country": "Japan",
+      "coordinates": [
+        35.772,
+        140.3929
+      ]
+    },
+    "destinationHub": {
+      "code": "LHR",
+      "name": "London Heathrow World Cargo Centre",
+      "city": "London",
+      "country": "United Kingdom",
+      "coordinates": [
+        51.47,
+        -0.4543
+      ]
+    },
+    "currentLocation": {
+      "city": "Baku Air Corridor",
+      "country": "Azerbaijan",
+      "description": "In flight en route to Heathrow LHR (Apex AF-902)",
+      "coordinates": [
+        40.4093,
+        49.8671
+      ],
+      "updatedAt": "2026-08-26T04:30:00Z"
+    },
+    "sender": {
+      "name": "Hiroshi Tanaka",
+      "company": "Grand Horology Precision Ltd.",
+      "address": "4-1-2 Ginza, Chuo-ku",
+      "city": "Tokyo",
+      "postalCode": "104-0061",
+      "country": "Japan",
+      "phone": "+81 3 5555 0142",
+      "email": "export@grand-horology.jp"
+    },
+    "receiver": {
+      "name": "Alexander Sterling",
+      "company": "Mayfair Luxury Watch Gallery",
+      "address": "28 Old Bond Street",
+      "city": "London",
+      "stateProvince": "Greater London",
+      "postalCode": "W1S 4DR",
+      "country": "United Kingdom",
+      "phone": "+44 20 7946 0912",
+      "email": "a.sterling@mayfairgallery.co.uk"
+    },
+    "packageDetails": {
+      "weight": 6.2,
+      "unit": "kg",
+      "dimensions": "40 x 30 x 20 cm",
+      "pieces": 1,
+      "cargoType": "High Luxury Horological Timepieces & Micro-Mechanisms",
+      "declaredValue": "£45,000.00",
+      "currency": "GBP",
+      "isInsured": true,
+      "insurancePolicyNumber": "POL-LUX-2026-091",
+      "specialHandling": "Armored transit seal. Secure courier handoff.",
+      "barcodeNumber": "8901239920401"
+    },
+    "transportVessel": {
+      "type": "flight",
+      "identifier": "Apex Intercontinental Cargo AF-902",
+      "carrier": "Apex Global Express"
+    },
+    "checkpoints": [
+      {
+        "id": "chk_gb_1",
+        "timestamp": "2026-08-26T04:30:00Z",
+        "location": "Trans-Eurasia Air Corridor",
+        "city": "En Route",
+        "country": "International Airspace",
+        "status": "in_transit",
+        "title": "In Flight - Scheduled Airfreight Transit",
+        "description": "Flight AF-902 tracking on schedule. Expected touchdown at LHR: 14:20 BST.",
+        "facilityCode": "AIR-AF902",
+        "coordinates": [
+          40.4093,
+          49.8671
+        ],
+        "completed": true
+      },
+      {
+        "id": "chk_gb_2",
+        "timestamp": "2026-08-25T18:00:00Z",
+        "location": "Tokyo Narita Air Freight Terminal",
+        "city": "Tokyo",
+        "country": "Japan",
+        "status": "picked_up",
+        "title": "Export Customs Released & Palletized",
+        "description": "Japan Customs export clearance sealed. Loaded into secure cargo container ULD-491.",
+        "facilityCode": "NRT-AIR-01",
+        "coordinates": [
+          35.772,
+          140.3929
+        ],
+        "completed": true
+      },
+      {
+        "id": "chk_gb_3",
+        "timestamp": "2026-08-24T11:00:00Z",
+        "location": "Apex Ginza Booking Office",
+        "city": "Tokyo",
+        "country": "Japan",
+        "status": "manifest_created",
+        "title": "Consignment Registered & Waybill Issued",
+        "description": "Air Waybill issued under priority VIP White-Glove tier.",
+        "facilityCode": "TYO-CTR-09",
+        "coordinates": [
+          35.6762,
+          139.6503
+        ],
+        "completed": true
+      }
+    ]
+  },
+  {
+    "id": "shp_3310_jp",
+    "trackingNumber": "APX-3310-AU",
+    "referenceNumber": "DXB-SYD-2026-441",
+    "serviceType": "priority_ocean",
+    "status": "delivered",
+    "statusMessage": "Delivered in full and signed for by Marcus Vance at Logistics Reception.",
+    "createdAt": "2026-08-15T09:00:00Z",
+    "updatedAt": "2026-08-25T14:45:00Z",
+    "estimatedDelivery": "2026-08-25T15:00:00Z",
+    "actualDelivery": "2026-08-25T14:45:00Z",
+    "originHub": {
+      "code": "DWC",
+      "name": "Dubai Logistics City International Port",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "coordinates": [
+        25.2048,
+        55.2708
+      ]
+    },
+    "destinationHub": {
+      "code": "SYD",
+      "name": "Port Botany & Sydney Air Cargo Hub",
+      "city": "Sydney",
+      "country": "Australia",
+      "coordinates": [
+        -33.8688,
+        151.2093
+      ]
+    },
+    "currentLocation": {
+      "city": "Sydney",
+      "country": "Australia",
+      "description": "Delivered: 120 Pacific Highway, North Sydney",
+      "coordinates": [
+        -33.8398,
+        151.2072
+      ],
+      "updatedAt": "2026-08-25T14:45:00Z"
+    },
+    "sender": {
+      "name": "Al-Mansoor Aviation Supplies FZCO",
+      "company": "Dubai South Aerospace Hub",
+      "address": "Suite 404, Building A3",
+      "city": "Dubai",
+      "postalCode": "Dubai South",
+      "country": "United Arab Emirates",
+      "phone": "+971 4 887 9000",
+      "email": "shipping@almansoor-aviation.ae"
+    },
+    "receiver": {
+      "name": "Marcus Vance",
+      "company": "Australasia Aeronautical Engineering",
+      "address": "120 Pacific Highway, Level 14",
+      "city": "Sydney",
+      "stateProvince": "NSW",
+      "postalCode": "2060",
+      "country": "Australia",
+      "phone": "+61 2 9955 4100",
+      "email": "m.vance@australasia-aero.com.au"
+    },
+    "packageDetails": {
+      "weight": 128,
+      "unit": "kg",
+      "dimensions": "120 x 80 x 75 cm",
+      "pieces": 3,
+      "cargoType": "Aerospace Composite Structural Components",
+      "declaredValue": "$64,000.00",
+      "currency": "USD",
+      "isInsured": true,
+      "insurancePolicyNumber": "POL-AERO-9931",
+      "barcodeNumber": "8901233310001"
+    },
+    "signatureProof": {
+      "signedBy": "Marcus Vance",
+      "timestamp": "2026-08-25T14:45:22Z",
+      "relation": "Recipient Direct (Photo & Digital Sign Verified)"
+    },
+    "checkpoints": [
+      {
+        "id": "chk_au_1",
+        "timestamp": "2026-08-25T14:45:00Z",
+        "location": "Sydney Business District Delivery",
+        "city": "Sydney",
+        "country": "Australia",
+        "status": "delivered",
+        "title": "Delivered & Signed",
+        "description": "Successfully received by Marcus Vance. Clean delivery receipt logged.",
+        "facilityCode": "SYD-POD-01",
+        "coordinates": [
+          -33.8398,
+          151.2072
+        ],
+        "signedBy": "Marcus Vance",
+        "completed": true
+      },
+      {
+        "id": "chk_au_2",
+        "timestamp": "2026-08-25T08:15:00Z",
+        "location": "Port Botany Hub",
+        "city": "Sydney",
+        "country": "Australia",
+        "status": "out_for_delivery",
+        "title": "Out For Delivery with Heavy Freight Unit",
+        "description": "Dispatched on courier vehicle #SYD-HV-102.",
+        "facilityCode": "SYD-DIST-04",
+        "coordinates": [
+          -33.8688,
+          151.2093
+        ],
+        "completed": true
+      },
+      {
+        "id": "chk_au_3",
+        "timestamp": "2026-08-24T16:20:00Z",
+        "location": "Australian Border Force Terminal",
+        "city": "Sydney",
+        "country": "Australia",
+        "status": "customs_clearance",
+        "title": "Customs & Biosecurity Cleared",
+        "description": "Full Department of Agriculture biosecurity clearance granted.",
+        "facilityCode": "AU-ABF-SYD",
+        "coordinates": [
+          -33.8688,
+          151.2093
+        ],
+        "completed": true
+      },
+      {
+        "id": "chk_au_4",
+        "timestamp": "2026-08-16T12:00:00Z",
+        "location": "Dubai Logistics City Port",
+        "city": "Dubai",
+        "country": "United Arab Emirates",
+        "status": "in_transit",
+        "title": "Departed Origin Maritime Hub",
+        "description": "Consignment departed Dubai Freight terminal.",
+        "facilityCode": "DWC-LOG-01",
+        "coordinates": [
+          25.2048,
+          55.2708
+        ],
+        "completed": true
+      },
+      {
+        "id": "chk_au_5",
+        "timestamp": "2026-08-15T09:00:00Z",
+        "location": "Apex Dubai Central Operations",
+        "city": "Dubai",
+        "country": "United Arab Emirates",
+        "status": "manifest_created",
+        "title": "Manifest Created",
+        "description": "Heavy cargo documentation, dangerous goods checklist, and insurance verified.",
+        "facilityCode": "DXB-HQ-01",
+        "coordinates": [
+          25.2048,
+          55.2708
+        ],
+        "completed": true
+      }
+    ]
+  },
+  {
+    "id": "shp_5519_de",
+    "trackingNumber": "APX-5519-DE",
+    "referenceNumber": "SIN-FRA-8812",
+    "serviceType": "international_freight",
+    "status": "customs_clearance",
+    "statusMessage": "Under customs clearance inspection at Frankfurt CargoCity Süd.",
+    "createdAt": "2026-08-22T04:00:00Z",
+    "updatedAt": "2026-08-26T03:00:00Z",
+    "estimatedDelivery": "2026-08-28T12:00:00Z",
+    "originHub": {
+      "code": "SIN",
+      "name": "Singapore Changi Airfreight Centre",
+      "city": "Singapore",
+      "country": "Singapore",
+      "coordinates": [
+        1.3644,
+        103.9915
+      ]
+    },
+    "destinationHub": {
+      "code": "FRA",
+      "name": "Frankfurt CargoCity Süd",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "coordinates": [
+        50.0379,
+        8.5622
+      ]
+    },
+    "currentLocation": {
+      "city": "Frankfurt am Main",
+      "country": "Germany",
+      "description": "Zollamt Frankfurt Flughafen - Clearance processing",
+      "coordinates": [
+        50.0379,
+        8.5622
+      ],
+      "updatedAt": "2026-08-26T03:00:00Z"
+    },
+    "sender": {
+      "name": "Apex Semiconductor Foundry Pte",
+      "company": "Changi High-Tech Park",
+      "address": "8 Changi Business Park Ave 1",
+      "city": "Singapore",
+      "postalCode": "486018",
+      "country": "Singapore",
+      "phone": "+65 6789 0123",
+      "email": "dispatch@singapore-semi.sg"
+    },
+    "receiver": {
+      "name": "Klaus Weidmann",
+      "company": "Stuttgart Automotive Robotics GmbH",
+      "address": "Daimlerstraße 45",
+      "city": "Stuttgart",
+      "stateProvince": "Baden-Württemberg",
+      "postalCode": "70372",
+      "country": "Germany",
+      "phone": "+49 711 987650",
+      "email": "k.weidmann@stuttgart-robotics.de"
+    },
+    "packageDetails": {
+      "weight": 38,
+      "unit": "kg",
+      "dimensions": "80 x 60 x 50 cm",
+      "pieces": 4,
+      "cargoType": "Industrial Silicon Microcontrollers & Robotics ICs",
+      "declaredValue": "€52,400.00",
+      "currency": "EUR",
+      "isInsured": true,
+      "barcodeNumber": "8901235519001"
+    },
+    "customsDetails": {
+      "declarationNumber": "EU-DE-ZOLL-88390",
+      "status": "pending",
+      "dutyAmount": "€1,240.00 (Standard Commercial Tariff)"
+    },
+    "checkpoints": [
+      {
+        "id": "chk_de_1",
+        "timestamp": "2026-08-26T03:00:00Z",
+        "location": "Frankfurt CargoCity Süd Customs Area",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "status": "customs_clearance",
+        "title": "Customs Documentation Under Review",
+        "description": "Electronic commercial invoice submitted to German Customs Authority (Zoll).",
+        "facilityCode": "FRA-ZOLL-01",
+        "coordinates": [
+          50.0379,
+          8.5622
+        ],
+        "completed": true
+      },
+      {
+        "id": "chk_de_2",
+        "timestamp": "2026-08-25T11:30:00Z",
+        "location": "Frankfurt Airport Terminal 4 Cargo",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "status": "received_at_facility",
+        "title": "Arrived at Frankfurt Freight Hub",
+        "description": "Transferred from Singapore flight SQ-Cargo 791.",
+        "facilityCode": "FRA-CARGO-T4",
+        "coordinates": [
+          50.0379,
+          8.5622
+        ],
+        "completed": true
+      },
+      {
+        "id": "chk_de_3",
+        "timestamp": "2026-08-23T14:00:00Z",
+        "location": "Singapore Changi Air Hub",
+        "city": "Singapore",
+        "country": "Singapore",
+        "status": "in_transit",
+        "title": "Departed Singapore Changi",
+        "description": "Direct air cargo connection to Europe.",
+        "facilityCode": "SIN-AIR-01",
+        "coordinates": [
+          1.3644,
+          103.9915
+        ],
+        "completed": true
+      },
+      {
+        "id": "chk_de_4",
+        "timestamp": "2026-08-22T04:00:00Z",
+        "location": "Singapore Changi Airfreight Centre",
+        "city": "Singapore",
+        "country": "Singapore",
+        "status": "manifest_created",
+        "title": "Manifest Created",
+        "description": "Air Waybill issued and packaging seal verified.",
+        "facilityCode": "SIN-CTR-01",
+        "coordinates": [
+          1.3644,
+          103.9915
+        ],
+        "completed": true
+      }
+    ]
+  }
+]

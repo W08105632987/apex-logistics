@@ -1,0 +1,42 @@
+{
+  "name": "apex-logistics",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "node --disable-warning=ExperimentalWarning --watch server/index.mjs",
+    "dev:web": "vite --port=5173 --host=0.0.0.0",
+    "build": "vite build",
+    "start": "NODE_ENV=production node --disable-warning=ExperimentalWarning server/index.mjs",
+    "lint": "tsc --noEmit",
+    "create-user": "node --disable-warning=ExperimentalWarning server/cli.mjs create-user",
+    "reset-password": "node --disable-warning=ExperimentalWarning server/cli.mjs reset-password",
+    "list-users": "node --disable-warning=ExperimentalWarning server/cli.mjs list-users",
+    "seed-demo": "node --disable-warning=ExperimentalWarning server/cli.mjs seed-demo",
+    "backup": "node --disable-warning=ExperimentalWarning server/cli.mjs backup",
+    "test": "node --disable-warning=ExperimentalWarning --test server/tests/api.test.mjs"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "tailwindcss": "^4.1.14",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.3",
+    "@tailwindcss/vite": "^4.1.14",
+    "@vitejs/plugin-react": "^5.0.4",
+    "@types/canvas-confetti": "^1.9.0",
+    "concurrently": "^9.1.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}

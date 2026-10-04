@@ -1,0 +1,8 @@
+{
+  "name": "Apex Global Logistics & Track Hub",
+  "description": "World-class global freight and courier delivery portal featuring live tracking, interactive route visualizer, admin consignment generator with checkpoint management, automated customer email dispatch engine, and printable air waybills.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
